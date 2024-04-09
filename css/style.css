@@ -73,7 +73,7 @@ img {
 grid 라는 아이디 부분을 grid -> block,
 block, 공간 침투 불가능. 하나의 요소는 한 행만 차지를 합니다.
 결과,
-@media(max-width :800px){
+@media(max-width :1440px){
   #grid {
       display: block;
   }
@@ -84,13 +84,14 @@ block, 공간 침투 불가능. 하나의 요소는 한 행만 차지를 합니�
       border-bottom: none;
   }
 
+  #grid_pictures {
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    grid-template-columns: repeat(2, 1fr);
+    /* 그리드 내부에서의 행, 열에 여백 주기.  */
+    column-gap: 20px;
+    row-gap: 20px;
+  }
+
 }
 
-#grid_pictures {
-  display: grid;
-  /* grid-template-columns: 1fr 1fr 1fr; */
-  grid-template-columns: repeat(2, 1fr);
-  /* 그리드 내부에서의 행, 열에 여백 주기.  */
-  column-gap: 20px;
-  row-gap: 20px;
-}
