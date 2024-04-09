@@ -73,7 +73,7 @@ img {
 grid 라는 아이디 부분을 grid -> block,
 block, 공간 침투 불가능. 하나의 요소는 한 행만 차지를 합니다.
 결과,
-@media(max-width :1440px){
+@media(max-width :1500px){
   #grid {
       display: block;
   }
