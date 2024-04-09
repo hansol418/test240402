@@ -25,7 +25,7 @@ h1 {
 }
 
 ol {
-  border-right: 10px solid gray;
+  border-right: 1px solid gray;
   width: 100px;
   margin: 0;
   padding: 20px;
@@ -69,11 +69,11 @@ img {
   border: 5px pink dotted ;
 }
 
-800 px 미만시 , h1의 하단선 제거, ol의 오른쪽 선 제거,
-grid 라는 아이디 부분을 grid -> block,
-block, 공간 침투 불가능. 하나의 요소는 한 행만 차지를 합니다.
-결과,
-@media(max-width :1500px){
+/* 800 px 미만시 , h1의 하단선 제거, ol의 오른쪽 선 제거, 
+grid 라는 아이디 부분을 grid -> block, 
+block, 공간 침투 불가능. 하나의 요소는 한 행만 차지를 합니다. 
+결과, 세로 방향으로 하나의 요소씩만 차지한다. */
+@media(max-width :1440px){
   #grid {
       display: block;
   }
@@ -94,4 +94,3 @@ block, 공간 침투 불가능. 하나의 요소는 한 행만 차지를 합니�
   }
 
 }
-
