@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 지금은 학습용으로 html 문서 안에서 연습장 처럼 사용하고,
+    실무, 무조건 파일 분리해서 작업함. -->
+
+    <!-- document 객체 안에, (수납도구: 속성, 함수들(=메서드))
+    write 함수는 html 문서에 출력을 담당하는 기능.
+    write 함수에서 보통, 사용할 때, 소괄호 안에 무언가 값을 넣어요.
+    파라미터, 인자값
+    보통 문자열들은 : 큰 따옴표(""), 작은 따옴표('') 안에 표기 -->
+    <script>
+        document.write("<h1>오늘 점심은 뭐 먹지?</h1>")
+        document.write("<h2>오늘 메뉴는 수제 버거</h2>")
+        document.write(1 + 1)
+        document.write("<br>")
+        document.write("1+1")
+    </script>
+    <script>
+        // if (window.confirm("Do you really want to leave?")) {
+        //     alert("오늘 수제 버거 먹음!!")
+        // }
+
+    </script>
+    <h1>1+1</h1>
+
+    <input type="button" value="alertTest" onclick="
+       alert('alertTest 중입니다.')
+  ">
+
+    <input type="button" value="alertTest" onclick="
+       if (window.confirm('Do you really want to leave?')) {
+       alert('오늘 수제 버거 먹음!!')
+      }
+">
+    <br>
+    <input id="key1" type="text" value="onchange 테스트" onchange="alert('changed')">
+    <br>
+    <input id="key2" type="text" onkeydown="alert('key down')">
+    
+    <script>
+        document.write("내방법")
+    </script>
+    
+    <button onclick="clearInput()">clear</button>
+
+    <script>
+        function clearInput() {
+            document.getElementById('key2').value = '';
+        }
+    </script>
+
+    <script>
+        document.write("방법1")
+    </script>
+    <input type="button" value="clear" onclick="
+   document.querySelector('#key1').value = ''
+  ">
+
+    <script>
+        방법1
+        function clearMethod() {
+            var test = document.querySelector('#key1')
+            test.value = ''
+        }
+    </script>
+    방법2
+    <input type="button" value="clear" onclick="
+   var test = document.querySelector('#key2')
+   test.value = ''
+  ">
+    방법3
+    <input type="button" value="clear" onclick="
+   document.querySelector('#key').value = ''
+  ">
+
+
+
+</body>
+
+</html>
