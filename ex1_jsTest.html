@@ -5,9 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- 작업순서1 -->
+    <!-- 자바스크립트 파일 분리, 1타 N 적용하기.  -->
+    <script src="./js/color.js"></script>
 </head>
 
 <body>
+    <!-- 작업순서2 -->
+    <input id="night_day" type="button" value="night" onclick="
+    nightDayHandler(this);
+    ">
+    <div id="grid">
+
+        <ol>
+            <li><a href="1.html">HTML</a></li>
+            <li><a href="2.html">CSS</a></li>
+            <li><a href="3.html">JavaScript</a></li>
+            <li><a href="4.html">사진첩</a></li>
+            <li><a href="ex1_jsTest.html">자바스크립트</a></li>
+        </ol>
+    </div>
     <!-- 지금은 학습용으로 html 문서 안에서 연습장 처럼 사용하고,
     실무, 무조건 파일 분리해서 작업함. -->
 
@@ -44,11 +62,11 @@
     <input id="key1" type="text" value="onchange 테스트" onchange="alert('changed')">
     <br>
     <input id="key2" type="text" onkeydown="alert('key down')">
-    
+
     <script>
         document.write("내방법")
     </script>
-    
+
     <button onclick="clearInput()">clear</button>
 
     <script>
